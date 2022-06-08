@@ -40,6 +40,7 @@ body {
     background-color: #FFF7E8;
 }
 
+
 .container {
     margin-right: auto;
     margin-left: auto;
@@ -70,6 +71,16 @@ body {
     .container {
         max-width: 1140px;
     }
+}
+
+/********Pantallas medianas (tablets de menos de 992px)******/
+@media (max-width: 991.98px) { 
+h1.titulo-pagina, h1.titulo-pagina p {
+    text-align: center;   
+}
+main {
+    margin-top: 30px;
+}
 }
 
 .contaninerPrincipal {
