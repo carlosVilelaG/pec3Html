@@ -120,6 +120,7 @@ body {
     padding-bottom: 25px;
 }
 
+
 a {
     color: var(--contrast-color);
     text-decoration: none;
@@ -144,16 +145,22 @@ hr {
     --contrast-light-color: rgba(0, 0, 119, 0.1);
     --bg-dark-color: #000;
     --bg-light-color: #dedede;
-
 }
 
 /*************************
 Header
 **************************/
-header {
+
+header {    
+    background: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;    
     height: 60px;
     padding-top: 5px;
-    background: #FFFFFF;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 header .container {
@@ -178,52 +185,31 @@ header .container {
 /****************************
 Navbar menu
 *****************************/
-nav {
-    color: #2A2A2A;
-    display: inline-block;
-    position: absolute;
-    top: calc(50% - 0.5em);
-    margin-left: 850px;
-
+.menu
+{
+    display: flex;
+    list-style: none;   
 }
 
-nav ul {
-    text-align: right;
-}
-
-nav ul li {
-    display: inline-block;
-    font-size: 1.1rem;
-    font-weight: 400;
-    padding-left: 0;
-    text-align: right;
-}
-
-nav ul li::before {
-    content: "";
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-nav ul li:first-child::before {
-    content: "";
-    padding: 0;
-    text-align: right;
-}
-
-nav ul li a {
-    color: inherit;
+.menu a
+{
+    color:  #2A2A2A;
+    text-decoration: none;
+    padding: 5px;
     border: none;
 }
 
-nav ul li a:hover {
+
+.menu a:hover {
     border: none;
+    color: #79BAAB;
 }
 
 nav li.active a {
     font-weight: bold;
     color: #2A2A2A;
 }
+
 
 /*************************
     Footer
@@ -433,15 +419,34 @@ h2.linea-shop span {
     justify-content: space-evenly;
 }
 
-#enviar-suscripcion {
+.enviar-suscripcion {
     background-color: #DC4A23;
     color: #FFFFFF;
+    height: 40px ;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: #DC4A23;
+    border-radius: .2rem;
 }
 
-#enviar-suscripcion:hover {
+.enviar-suscripcion:hover {
     background-color: #EB9781;
+    border-color: #EB9781;
+}
+.input-suscription{    
+    height: 40px ;
 }
 
+.mail-suscription{
+    width: 220px;
+    height: 40px ;
+    border-radius: .2rem;
+    margin-right: 10px;
+}
+.parrafo-suscription{
+    margin-left: 35%;
+    margin-right: 35%;
+}
 a.recommendations {
     color: #DC4A23;
     border-bottom: none;
